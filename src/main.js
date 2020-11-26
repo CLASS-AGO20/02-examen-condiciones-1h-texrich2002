@@ -40,6 +40,9 @@ export default class App {
                 else if(terminacion == 2){
                     flag = false;
                 }
+                else{
+                    flag = false;
+                }
             break;
             case 2:
                 if(terminacion == 0){
@@ -49,6 +52,9 @@ export default class App {
                     flag = true;
                 }
                 else if(terminacion == 2){
+                    flag = false;
+                }
+                else{
                     flag = false;
                 }
             break;
@@ -62,6 +68,9 @@ export default class App {
                 else if(terminacion == 2){
                     flag = true;
                 }
+                else{
+                    flag = false;
+                }
             break;
             case 4:
                 if(terminacion == 0){
@@ -73,6 +82,9 @@ export default class App {
                 else if(terminacion == 2){
                     flag = true;
                 }
+                else{
+                    flag = false;
+                }
             break;
             case 5:
                 if(terminacion == 0){
@@ -82,6 +94,9 @@ export default class App {
                     flag = false;
                 }
                 else if(terminacion == 2){
+                    flag = false;
+                }
+                else{
                     flag = false;
                 }
             break;
@@ -95,6 +110,9 @@ export default class App {
                 else if(terminacion == 2){
                     flag = false;
                 }
+                else{
+                    flag = false;
+                }
             break;
             case 7:
                 if(terminacion == 0){
@@ -106,8 +124,11 @@ export default class App {
                 else if(terminacion == 2){
                     flag = false;
                 }
+                else{
+                    flag = false;
+                }
             break;
-            default: return false;
+            default: flag = false;
         }
         return flag;
     }
